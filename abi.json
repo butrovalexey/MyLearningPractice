@@ -1,0 +1,144 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "adr3",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "adr4",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "time",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "diag",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "ill_nam",
+				"type": "string"
+			}
+		],
+		"name": "doctor_appointment",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "adr2",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "doc_name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "specialization",
+				"type": "string"
+			}
+		],
+		"name": "doctor_registration",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "adr1",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "pat_name",
+				"type": "string"
+			}
+		],
+		"name": "patient_registration",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "admin",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "for_what_diagnoze",
+				"type": "string"
+			}
+		],
+		"name": "ill_statistics",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "ill_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "patients_infected",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct poliklinika.illness",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "special",
+				"type": "string"
+			}
+		],
+		"name": "print_info",
+		"outputs": [
+			{
+				"internalType": "string[]",
+				"name": "",
+				"type": "string[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
